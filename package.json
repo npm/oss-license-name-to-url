@@ -1,0 +1,30 @@
+{
+  "name": "oss-license-name-to-url",
+  "version": "1.0.0",
+  "description": "Convert shorthand OSS license names to opensource.org URLs",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/oss-license-name-to-url"
+  },
+  "keywords": [
+    "oss",
+    "license",
+    "gpl",
+    "mit",
+    "wtfpl",
+    "isc"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm/oss-license-name-to-url/issues"
+  },
+  "homepage": "https://github.com/npm/oss-license-name-to-url",
+  "devDependencies": {
+    "tap": "^0.5.0"
+  }
+}
