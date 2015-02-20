@@ -1,6 +1,6 @@
 # oss-license-name-to-url
 
-Convert shorthand OSS license names to opensource.org URLs
+Convert shorthand OSS license names appropriate URLs, predominantly opensource.org URLs.
 
 ## Installation
 
@@ -31,7 +31,7 @@ npm test
 
 ## Dependencies
 
-None
+- [osi-licenses](https://github.com/meryn/osi-licenses): id-name pairs of OSI-approved licenses, based on list at http://opensource.org/licenses/alphabetical .
 
 ## Dev Dependencies
 
