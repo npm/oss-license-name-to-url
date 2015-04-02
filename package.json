@@ -1,6 +1,6 @@
 {
   "name": "oss-license-name-to-url",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Convert shorthand OSS license names to opensource.org URLs",
   "main": "index.js",
   "scripts": {
