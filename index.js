@@ -1,10 +1,8 @@
-osiLicenses = Object.keys(require('osi-licenses')).map(function(license) {
-  return license.toLowerCase();
-});
+var osiLicenses = Object.keys(require('osi-licenses')).map(function (license) {
+  return license.toLowerCase()
+})
 
-var osiBaseUrl = 'http://opensource.org/licenses/';
-
-var licenseNameMap = {
+var aliases = {
   'bsd': 'BSD-2-Clause',
   'mit': 'MIT',
   'x11': 'MIT',
@@ -24,26 +22,25 @@ var licenseNameMap = {
   'lgplv2': 'LGPL-2.1',
   'cc0': 'cc0-1.0',
   'wtfpl': 'wtfplv2'
-};
+}
 
-// consider moving this to it's own module if it grows significantly large
-var alternativeLicenseUrlMap = {
+var alternatives = {
   'cc0-1.0': 'http://creativecommons.org/publicdomain/zero/1.0/',
   'wtfplv2': 'http://www.wtfpl.net/about/'
-};
+}
 
-module.exports = function(name) {
-  
-  if (licenseNameMap[name.toLowerCase()]) {
-    name = licenseNameMap[name.toLowerCase()];
+module.exports = function licenseNameToUrl (name) {
+  if (aliases[name.toLowerCase()]) {
+    name = aliases[name.toLowerCase()]
   }
 
-  if (osiLicenses.indexOf(name.toLowerCase()) != -1) {
-   return osiBaseUrl + name;
-  } else if (alternativeLicenseUrlMap[name.toLowerCase()]) {
-    return alternativeLicenseUrlMap[name.toLowerCase()];
-  } else {
-    return null;
+  if (~osiLicenses.indexOf(name.toLowerCase())) {
+    return 'http://opensource.org/licenses/' + name
   }
-   
-};
+
+  if (alternatives[name.toLowerCase()]) {
+    return alternatives[name.toLowerCase()]
+  }
+
+  return null
+}
