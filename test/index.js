@@ -10,6 +10,7 @@ test('oss-license-name-to-url', function (t) {
   t.equal(url('cc0-1.0'), 'http://creativecommons.org/publicdomain/zero/1.0/')
   t.equal(url('CC0'), 'http://creativecommons.org/publicdomain/zero/1.0/')
   t.equal(url('WTFPLv2'), 'http://www.wtfpl.net/about/')
+  t.equal(url('LGPLv3'), 'http://opensource.org/licenses/LGPL-3.0')
   t.equal(url('not-a-real-license'), null)
   t.end()
 })

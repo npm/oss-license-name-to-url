@@ -18,8 +18,14 @@ var aliases = {
   'gpl3': 'GPL-3.0',
   'gpl2': 'GPL-2.0',
   'lgpl': 'LGPL-2.1',
-  'lgplv2.1': 'LGPL-2.1',
+  'lgpl2': 'LGPL-2.1',
+  'lgpl2.1': 'LGPL-2.1',
   'lgplv2': 'LGPL-2.1',
+  'lgplv2.1': 'LGPL-2.1',
+  'lgplv3': 'LGPL-3.0',
+  'lgplv3.0': 'LGPL-3.0',
+  'lgpl3': 'LGPL-3.0',
+  'lgpl3.0': 'LGPL-3.0',
   'cc0': 'cc0-1.0',
   'wtfpl': 'wtfplv2'
 }
