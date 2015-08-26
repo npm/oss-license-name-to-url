@@ -32,6 +32,7 @@ var aliases = {
 
 var alternatives = {
   'cc0-1.0': 'http://creativecommons.org/publicdomain/zero/1.0/',
+  'vol': 'http://veryopenlicense.com/',
   'wtfplv2': 'http://www.wtfpl.net/about/'
 }
 
